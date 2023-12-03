@@ -1,20 +1,104 @@
-<index.html>
-    <link href="Harry potter.css" rel="stylesheet">
-    <link href="block.css" rel="block"
-<body>
-    <h1> Les personnages </h1>
-    <p> Il y a differents personnages dans cette univers.
-        tout d'abord, nous avons les personnages principaux composent de:
-    </p>
-    <p>
-        <img src="c:\Users\daphn\OneDrive\Documents\IIM\1ER G2\javascript\html\harry potter.jpeg" alt="Harry Potter">
-        Harry Potter:
-        Né le 31 juillet 1980 à Godric's Hollow, il a pour père James Potter, pour mère Lily Evans, et pour parrain Sirius Black.
-        Apprend qu'il est un sorcier a l'age de ses 11 ans. Rentre a l'ecole des sorciers (Poudlard). Il rentre un jeune sorcier qui deviendra son meilleur amie (Ron) et une brillante sorciere (Hermione). Tout les trois rentrerons dans la maison Griffondor.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PAGE DE HARRY POTTER</title>
+  <meta charset="UTF-8">
+  <link href="Harry potter.css" rel="stylesheet">
+  <link href="block.css" rel="stylesheet"> 
+  <style>
+    .flex-group {
+      display: flex;
+      justify-content: space-between;
+      margin: 10%;
+    }
 
-        <img src="c:\Users\daphn\OneDrive\Documents\IIM\1ER G2\javascript\html\ron.jpeg" alt="Ron Weasley">
-        Ron Weasley:
-        né le 1er mars 1980. Il est né d'une famille de sorcier. Il rencontre Harry Potter dans Poudlard Express. IL rentre dans la maison Griffondor comme toute ça famille.
-    </p>
-    <a href="Harry potter.html"> retour a l'accueil</a>
+    .flex-container {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 195, 43);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      border: 2px solid rgb(255, 195, 43);
+      border-radius: 8px;
+      width: 100%; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+    }
+
+    .flex-item {
+      padding: 10px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+
+    .align-left {
+      float: left;
+      margin-right: 10px; 
+    }
+
+    .half-width {
+      width: 50%; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+    }
+
+    .first-half {
+      float: right;
+    }
+
+    .half-width img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .first-half {
+      float: left;
+      clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Les personnages</h1>
+
+  <div class="flex-container">
+    <div class="half-width first-half">
+      <img src="https://ds.static.rtbf.be/article/image/370xAuto/9/f/e/22092739299f309047d8b7992c34d3f7-1471513110.jpg" alt="Harry Potter" />
+      
+      Harry Potter :
+      Né le 31 juillet 1980 à Godric's Hollow, il a pour père James Potter, pour mère Lily Evans, et pour parrain Sirius Black.
+      Apprend qu'il est un sorcier à l'âge de ses 11 ans. Rentre à l'école des sorciers (Poudlard). Il rentre avec un jeune sorcier qui deviendra son meilleur ami (Ron) et une brillante sorcière (Hermione). Tout les trois rentreront dans la maison Gryffondor.
+    </div>
+
+    <div class="half-width">
+      <img class="align-left" src="https://static.wikia.nocookie.net/ravencbbctvseries/images/8/85/Ron_Weasley.jpg/revision/latest?cb=20181218004603" alt="Ron Weasley" />
+      
+      Ron Weasley :
+      Né le 1er mars 1980. Il est né d'une famille de sorciers. Il rencontre Harry Potter dans le Poudlard Express. Il rentre dans la maison Gryffondor comme toute sa famille.
+    </div>
+
+<br>
+<br>
+<br>
+
+    <div class="half-width first-half">
+        <img class="align-left" src="https://www.choisirunfilm.fr/characters/medium/2531.jpg" alt="Hermione Granger" />
+
+        Hermione Granger:
+        Née le 19 septembre 1979, Hermione Jean Granger est la fille unique de deux dentistes moldus. Elle découvre ses pouvoirs magiques en 1991. Et rentre a Poudlard au cote d'Harry Potter et de Ron Weasley.
+    </div>
+    <div class="half-width">
+        <img class="align-right" src="data:image/jpeg;base64,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" alt="Drago Malefoy" />
+
+        Drago Malefoy:
+        Il était un sorcier britannique de sang pur et le fils unique de Lucius et Narcissa Malefoy (née Black). Fils d'un Mangemort, Drago a été élevé en croyant fermement à l'importance de la pureté du sang. Il a fréquenté l'école de sorcellerie de Poudlard et a été classé dans la maison de Serpentard.
+    </div>
+  </div>
+
+  <br>
+
+  <a href="Harry potter.html">Retour à l'accueil</a>
+
+<br>
+
 </body>
+</html>
